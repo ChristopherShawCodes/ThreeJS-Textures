@@ -111,12 +111,12 @@ HINT: One textureLoader can load more than ONE TEXTURE
 
 2. Apply texture to the material for rendering 
 
-`const textureLoader = new THREE.TextureLoader()
-const texture = textureLoader.load('/textures/door/color.jpg')
+            `const textureLoader = new THREE.TextureLoader()
+            const texture = textureLoader.load('/textures/door/color.jpg')
 
 
 
-const material = new THREE.MeshBasicMaterial({ map: texture })`
+            const material = new THREE.MeshBasicMaterial({ map: texture })`
 
 
 -------
@@ -133,7 +133,7 @@ This could be helpful if there is an error loading an image.
  
  -error: when an error occurs 
 
-` const texture = textureLoader.load(
+            `const texture = textureLoader.load(
     '/textures/door/color.jpg',
     () =>
     {
@@ -154,17 +154,17 @@ This could be helpful if there is an error loading an image.
 
 Example of multiple textures being loaded via static images 
 
-`const loadingManager = new THREE.LoadingManager()
-const textureLoader = new THREE.TextureLoader(loadingManager)
+            `const loadingManager = new THREE.LoadingManager()
+            const textureLoader = new THREE.TextureLoader(loadingManager)
 
 
-const colorTexture = textureLoader.load('/textures/door/color.jpg')
-const alphaTexture = textureLoader.load('/textures/door/alpha.jpg')
-const heightTexture = textureLoader.load('/textures/door/height.jpg')
-const normalTexture = textureLoader.load('/textures/door/normal.jpg')
-const ambientOcclusionTexture = textureLoader.load('/textures/door/ambientOcclusion.jpg')
-const metalnessTexture = textureLoader.load('/textures/door/metalness.jpg')
-const roughnessTexture = textureLoader.load('/textures/door/roughness.jpg')`
+            const colorTexture = textureLoader.load('/textures/door/color.jpg')
+            const alphaTexture = textureLoader.load('/textures/door/alpha.jpg')
+            const heightTexture = textureLoader.load('/textures/door/height.jpg')
+            const normalTexture = textureLoader.load('/textures/door/normal.jpg')
+            const ambientOcclusionTexture = textureLoader.load('/textures/door/ambientOcclusion.jpg')
+            const metalnessTexture = textureLoader.load('/textures/door/metalness.jpg')
+            const roughnessTexture = textureLoader.load('/textures/door/roughness.jpg')`
 
 -------------------------------------------------------
 
