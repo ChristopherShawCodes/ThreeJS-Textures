@@ -19,8 +19,9 @@ https://marmoset.co/posts/basic-theory-of-physically-based-rendering/
 
 
 
--Common Textures-
+-Commonly Used Textures-
 
+---------------------
 
 Color (or Albedo)
 
